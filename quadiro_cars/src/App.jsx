@@ -12,6 +12,7 @@ import OnlyAdminPrivateRoute from './components/OnlyAdminPrivateRoute';
 import CreatePost from './pages/CreatePost';
 import UpdatePost from './pages/UpdatePost';
 import PostPage from './pages/PostPage';
+import Search from './pages/Search';
 
 
 const App = () => {
@@ -29,7 +30,7 @@ const App = () => {
           <Route path='/create-post' element={<CreatePost />} />
           <Route path='/update-post/:postId' element={<UpdatePost />} />
         </Route>
-        
+        <Route path='/search' element={<Search />} />
         <Route path='/post/:postSlug' element={<PostPage />} />
       </Routes>
       <Footer />
