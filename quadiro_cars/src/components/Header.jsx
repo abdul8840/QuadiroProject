@@ -12,9 +12,9 @@ export default function Header() {
         className="self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white"
       >
         <span className="px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white">
-          Sahand's
+          Quadiro
         </span>
-        Blog
+        Cars
       </Link>
       <form>
         <TextInput
@@ -29,7 +29,7 @@ export default function Header() {
           <FaMoon />
         </Button>
         <Link to="/sign-in">
-          <Button className="bg-gradient-to-r from-purple-400 to-blue-500 text-white">
+          <Button className="bg-gradient-to-r from-purple-400 to-blue-500 text-white" outline>
             Sign In
           </Button>
         </Link>
