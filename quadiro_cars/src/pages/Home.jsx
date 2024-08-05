@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import PostCard from '../components/PostCard';
+import Hero from '../components/Hero';
 
 export default function Home() {
   const [posts, setPosts] = useState([]);
@@ -15,18 +15,7 @@ export default function Home() {
   }, []);
   return (
     <div>
-      <div className='flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto '>
-        <h1 className='text-3xl font-bold lg:text-6xl'>Welcome to Quadiro car</h1>
-        <p className='text-gray-500 text-xs sm:text-sm'>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias fuga itaque iure illo libero dolorem sed eveniet, vitae inventore ad nostrum, quam laboriosam, soluta vero quas quo eligendi aliquam assumenda!
-        </p>
-        <Link
-          to='/search'
-          className='text-xs sm:text-sm text-teal-500 font-bold hover:underline'
-        >
-          View all Cars
-        </Link>
-      </div>
+      <Hero />
       <div className='p-3 bg-amber-100 dark:bg-slate-700'>
       </div>
 
