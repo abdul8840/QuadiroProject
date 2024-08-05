@@ -106,9 +106,6 @@ export default function Header() {
             </Button>
           </Link>
         )}
-        <Button className="w-12 h-10 lg:hidden" color="gray" pill>
-          <AiOutlineSearch />
-        </Button>
       </div>
     </Navbar>
   );
