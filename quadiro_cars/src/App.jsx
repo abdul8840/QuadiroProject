@@ -13,6 +13,7 @@ import CreatePost from './pages/CreatePost';
 import UpdatePost from './pages/UpdatePost';
 import PostPage from './pages/PostPage';
 import Search from './pages/Search';
+import Brands from './pages/Brands';
 
 
 const App = () => {
@@ -32,6 +33,7 @@ const App = () => {
         </Route>
         <Route path='/search' element={<Search />} />
         <Route path='/post/:postSlug' element={<PostPage />} />
+        <Route path='/brand/:brandName' element={<Brands />} />
       </Routes>
       <Footer />
     </BrowserRouter>
