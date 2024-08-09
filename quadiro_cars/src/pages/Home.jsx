@@ -31,7 +31,7 @@ export default function Home() {
       <div className='p-3 bg-amber-100 dark:bg-slate-700'>
         <div className="max-w-6xl mx-auto p-5 flex gap-6 overflow-scroll hide-scrollbar">
         {categories.map((brand, index) => (
-          <Link to={`/brand/${brand}`}>
+          <Link to={`/brand/${brand.brand}`}>
           <div key={index} className='w-[200px] border-2 border-slate-500 py-1 px-3 rounded-md'>
             <img src={brand.image} alt="" className='w-full h-[100px] mb-2' />
             <h2 className='text-xl font-bold'>{brand.brand}</h2>
